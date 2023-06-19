@@ -19,7 +19,7 @@ class CustomMiddleware:
             return self.get_response(request)
 
         # Code to be executed for each request before the view (get_response) is called
-        token : bool = True if request.META.get('token') else False
+        token : bool = True if request.headers.get('token') else False
 
         if not token:
             return HttpResponseForbidden("You are not authenticated.")
