@@ -148,10 +148,5 @@ SWAGGER_SETTINGS = {
         'name': 'token',
         'in': 'header'
         },
-        'Custom': {
-            'type': 'apiKey',
-            'name': 'custom_header',
-            'in': 'header',
-        },
     }
 }
